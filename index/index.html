@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idolo TV</title>
+    <script src="https://countapi.xyz/js/countapi.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #efefef;
+      }
+
+      #container {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 36px;
+        color: black;
+        font-family: Poppins, sans-serif;
+      }
+
+      label {
+        font-size: 15px;
+        font-family: Poppins, sans-serif;
+      }
+
+      input[type="text"] {
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+        margin-bottom: 20px;
+      }
+
+      button[type="submit"] {
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: black;
+      }
+
+      #counter {
+        font-size: 24px;
+        margin-top: 50px;
+      }
+      
+    .content{
+    text-align: justify;
+    border-width: 280px;
+    border-box:50px;
+}
+
+img{
+  width:350px;
+ justify-self: center;
+}
+      
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Idolo TV</h1>
+<img src="./assets/creative.png" alt="creatives" />
+<div class="content">
+      Idolo TV is a vibrant and dynamic WhatsApp community for creatives who are passionate about personal and professional growth. <br> <br />
+      Our community is a hub for artists, entrepreneurs, and professionals from a wide range of fields, 
+      all united in our shared desire to achieve our dreams and become the best versions of ourselves.  <br> <br />
+      Whether you're an aspiring musician, a budding writer, a budding filmmaker, or a seasoned business owner, Idolo TV provides a platform where you can connect with like-minded individuals and grow together. <br> <br />
+      Our community is a supportive and empowering space where members can share their ideas, offer feedback, and collaborate on projects. <br> <br />
+      
+      At Idolo TV, we believe that growth happens through learning, sharing, and collaboration. <br> <br />
+      Our community provides opportunities for members to attend workshops, webinars, and training sessions led by experts in various fields. <br> <br />
+      We also organize networking events, mentorship programs, and group projects that provide opportunities for members to connect and collaborate. <br> <br />
+      
+      Joining Idolo TV is a chance to become part of a community of like-minded creatives who are committed to personal and professional growth. <br><br />
+      If you're looking for a supportive and empowering community that will help you achieve your dreams, join Idolo TV today! <br>
+
+</div>
+
+
+<br>
+<br>
+
+      <form id="myForm" onsubmit="sendMessage(); return false;">
+        <label for="name">FILL THE FORM BELOW TO JOIN</label><br><br>
+        <input type="text" id="name" name="name" placeholder="My Name Is..." required><br><br>
+        <input type="text" id="occupation" name="occupation" placeholder="I Am A ..." required><br><br>
+        <button type="submit">Join Idolo TV</button>
+      </form>
+      <p id="counter">  </p>
+    </div>
+    <script>
+      function sendMessage() {
+        const name = document.getElementById("name").value;
+        const occupation = document.getElementById("occupation").value;
+        const message = "Hi , I am "+ name + " I want to join Idolo TV! " + " I Am A "+ occupation;
+        const url = "https://wa.me/2349043417811?text=" + encodeURIComponent(message);
+        window.location.href = url;
+      }
+
+      countapi.visits().then((result) => {
+        const counter = document.getElementById("counter");
+        counter.innerText = "We have had " + result.value + " visitors!";
+      });
+    </script>
+  </body>
+</html>
