@@ -6,8 +6,12 @@
     <title>Idolo TV</title>
     <script src="https://countapi.xyz/js/countapi.js"></script>
     <style>
+    
+    :roor{
+      font-family: 'Poppins';
+    }
       body {
-        font-family: Arial, sans-serif;
+        font-family: 'Poppins';
         background-color: #efefef;
       }
 
@@ -20,8 +24,11 @@
       h1 {
         font-size: 36px;
         color: black;
-        font-family: Poppins, sans-serif;
+        font-family: cursive;
+        
       }
+      
+     
 
       label {
         font-size: 15px;
@@ -35,6 +42,8 @@
         border: none;
         box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
         margin-bottom: 20px;
+        width:300px;
+        height:40px;
       }
 
       button[type="submit"] {
@@ -71,17 +80,29 @@ img{
   </head>
   <body>
     <div id="container">
+    
       <h1>Idolo TV</h1>
+    
 <img src="./assets/creative.png" alt="creatives" />
 <div class="content">
       Idolo TV is a vibrant and dynamic WhatsApp community for creatives who are passionate about personal and professional growth. <br> <br />
+      
       Our community is a hub for artists, entrepreneurs, and professionals from a wide range of fields, 
       all united in our shared desire to achieve our dreams and become the best versions of ourselves.  <br> <br />
+     
       Whether you're an aspiring musician, a budding writer, a budding filmmaker, or a seasoned business owner, Idolo TV provides a platform where you can connect with like-minded individuals and grow together. <br> <br />
+      
+            <img src="./assets/pana.png" alt="creatives" />
+      <br />
+      
       Our community is a supportive and empowering space where members can share their ideas, offer feedback, and collaborate on projects. <br> <br />
       
       At Idolo TV, we believe that growth happens through learning, sharing, and collaboration. <br> <br />
       Our community provides opportunities for members to attend workshops, webinars, and training sessions led by experts in various fields. <br> <br />
+      
+      
+            <img src="./assets/creative.png" alt="creatives" />
+      <br />
       We also organize networking events, mentorship programs, and group projects that provide opportunities for members to connect and collaborate. <br> <br />
       
       Joining Idolo TV is a chance to become part of a community of like-minded creatives who are committed to personal and professional growth. <br><br />
@@ -95,8 +116,8 @@ img{
 
       <form id="myForm" onsubmit="sendMessage(); return false;">
         <label for="name">FILL THE FORM BELOW TO JOIN</label><br><br>
-        <input type="text" id="name" name="name" placeholder="My Name Is..." required><br><br>
-        <input type="text" id="occupation" name="occupation" placeholder="I Am A ..." required><br><br>
+        <input type="text" id="name" name="name" placeholder="E.g John Doe" required><br><br>
+        <input type="text" id="occupation" name="occupation" placeholder="E.g Software Developer" required><br><br>
         <button type="submit">Join Idolo TV</button>
       </form>
       <p id="counter">  </p>
