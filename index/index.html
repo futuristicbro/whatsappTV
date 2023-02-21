@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+  <meta name="description"
+    content="Join Idolo Tv! Idolo TV is a vibrant and dynamic WhatsApp community for creatives who are passionate about personal and professional growth.">
+  <meta name="keywords" content="Idolo, Tv, Tech">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
     <title>Idolo TV</title>
-    <script src="https://countapi.xyz/js/countapi.js"></script>
+  
+  
+  
     <style>
     
-    :root{
-      font-family: 'Poppins';
+
+    
+        *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 5px;
+      
     }
-      body {
+    
+     html , body {
         font-family: 'Poppins';
         background-color: #efefef;
+        scroll-behavior: smooth;
       }
 
       #container {
@@ -46,7 +64,7 @@
         box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
         margin-bottom: 20px;
         width:300px;
-        height:30px;
+        height:40px;
         background: ghostwhite;
       }
 
@@ -76,7 +94,7 @@
 }
 
 img{
-  width:350px;
+ max-width:350px;
  justify-self: center;
 }
       .fastLink{
@@ -89,6 +107,10 @@ img{
         width:300px;
         border-radius:10px;
       }
+      
+       .fastlink:active {
+      transform: scale(.88);
+    }
       
       a{
         text-decoration: none;
@@ -103,7 +125,7 @@ img{
   
   .h2{
     text-align: center;
-    font-family: cursive;
+    font-family: "Poppins", sans-serif;
     font-weight:bold;
     font-size: 36px;
     color:brown;
@@ -171,21 +193,6 @@ img{
         <br />
         <br />
       </form>
-      <p id="counter">  </p>
-    </div>
-    <script>
-      function sendMessage() {
-        const name = document.getElementById("name").value;
-        const occupation = document.getElementById("occupation").value;
-        const message = "Hi , I am "+ name + " I want to join Idolo TV! " + " I Am A "+ occupation;
-        const url = "https://wa.me/2349043417811?text=" + encodeURIComponent(message);
-        window.location.href = url;
-      }
-
-      countapi.visits().then((result) => {
-        const counter = document.getElementById("counter");
-        counter.innerText = "We have had " + result.value + " visitors!";
-      });
-    </script>
+    
   </body>
 </html>
